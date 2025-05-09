@@ -51,6 +51,8 @@ class RectangleResult extends StatelessWidget {
               onPressed: () => Navigator.pop(context),
               child: const Text('Voltar'),
               style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red, // Cor de fundo
+                foregroundColor: Colors.white,
                 minimumSize: const Size(double.infinity, 50),
               ),
             ),

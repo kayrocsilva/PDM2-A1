@@ -113,6 +113,8 @@ class _DiamondEntryState extends State<DiamondEntry> {
                 onPressed: _calculate,
                 child: const Text('Calcular'),
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.indigo, // Cor de fundo
+                  foregroundColor: Colors.white,
                   minimumSize: const Size(double.infinity, 50),
                 ),
               ),

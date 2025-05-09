@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
               TextFormField(
                 controller: _emailController,
                 decoration: const InputDecoration(
-                  labelText: 'Email',
+                  labelText: 'Usuário',
                   border: OutlineInputBorder(),
                 ),
                 keyboardType: TextInputType.emailAddress,
@@ -117,6 +117,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 onPressed: _login,
                 child: const Text('Login'),
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue, // Cor de fundo
+                  foregroundColor: Colors.white,
                   minimumSize: const Size(double.infinity, 50),
                 ),
               ),

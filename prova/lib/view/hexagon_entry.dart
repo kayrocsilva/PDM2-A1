@@ -80,6 +80,8 @@ class _HexagonEntryState extends State<HexagonEntry> {
                 onPressed: _calcular,
                 child: const Text('Calcular Propriedades'),
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.indigo, // Cor de fundo
+                  foregroundColor: Colors.white,
                   minimumSize: const Size(double.infinity, 50),
                 ),
               ),

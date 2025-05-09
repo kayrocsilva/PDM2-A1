@@ -124,6 +124,8 @@ class _TrapezeEntryState extends State<TrapezeEntry> {
                 onPressed: _calculate,
                 child: const Text('Calcular Propriedades'),
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.indigo, // Cor de fundo
+                  foregroundColor: Colors.white,
                   minimumSize: const Size(double.infinity, 50),
                 ),
               ),

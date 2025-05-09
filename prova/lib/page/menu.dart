@@ -24,63 +24,63 @@ class _MenuPageState extends State<MenuPage> {
   final List<Map<String, dynamic>> menuButtons = [
     {
       'title': 'Retangulo',
-      'icon': Icons.home,
-      'color': Colors.blue,
+      'icon': Icons.rectangle_outlined,
+      'color': Colors.indigo,
       'page': const RectangleEntry(),
     },
     {
       'title': 'Triangle',
-      'icon': Icons.settings,
-      'color': Colors.green,
+      'icon': Icons.signal_cellular_0_bar_rounded,
+      'color': Colors.indigo,
       'page': const TriangleEntry(),
     },
     {
       'title': 'Hexagono',
-      'icon': Icons.person,
-      'color': Colors.purple,
+      'icon': Icons.hexagon,
+      'color': Colors.indigo,
       'page': const HexagonEntry(),
     },
     {
       'title': 'Losango',
-      'icon': Icons.notifications,
-      'color': Colors.orange,
+      'icon': Icons.pix,
+      'color': Colors.indigo,
       'page': const DiamondEntry(),
     },
 
     {
       'title': 'Quadrado',
-      'icon': Icons.email,
-      'color': Colors.red,
+      'icon': Icons.crop_square_rounded,
+      'color': Colors.indigo,
       'page': const SquareEntry(),
     },
     {
       'title': 'Circulo',
-      'icon': Icons.favorite,
-      'color': Colors.pink,
+      'icon': Icons.circle_outlined,
+      'color': Colors.indigo,
       'page': const CircleEntry(),
     },
     {
       'title': 'Paralelograma',
-      'icon': Icons.shopping_cart,
-      'color': Colors.teal,
+      'icon': Icons.view_timeline,
+      'color': Colors.indigo,
       'page': ParallelogramEntry(),
     },
     {
       'title': 'Trapézio',
-      'icon': Icons.map,
+      'icon': Icons.sd_card_alert_outlined,
       'color': Colors.indigo,
       'page': const TrapezeEntry(),
     },
     {
       'title': 'Esfera',
-      'icon': Icons.music_note,
-      'color': Colors.amber,
+      'icon': Icons.brightness_1_rounded,
+      'color': Colors.indigo,
       'page': const SphereEntry(),
     },
     {
       'title': 'Cubo',
-      'icon': Icons.camera_alt,
-      'color': Colors.cyan,
+      'icon': Icons.view_in_ar,
+      'color': Colors.indigo,
       'page': const CubeEntry(),
     },
   ];
@@ -89,7 +89,10 @@ class _MenuPageState extends State<MenuPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue[200],
-      appBar: AppBar(title: const Text("Menu Principal"), centerTitle: true),
+      appBar: AppBar(
+        title: const Text("Polígonos e Sólidos Geométricos"),
+        centerTitle: true,
+      ),
       body: GridView.builder(
         padding: const EdgeInsets.all(16.0),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

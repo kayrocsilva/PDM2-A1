@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'login.dart';
+import 'package:prova/page/login.dart';
+
 //import '../images/cps-55-anos.png';
 
 class Splash extends StatefulWidget {
@@ -35,15 +36,17 @@ class _SplashState extends State<Splash> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image.asset('prova\lib\images\fatec-matao.jpg'),
+              Image.asset('assets/images/cps-55-anos.png'),
+              const SizedBox(height: 1.0),
+              Image.asset('assets/images/fatec-matao.jpg'),
               const SizedBox(height: 25.0),
               Image.asset(
-                'prova\lib\images\cst-dsm.png',
-                width: 245,
-                height: 84,
+                'assets/images/cst-dsm.png',
+                width: 204,
+                height: 70,
               ), // 60% da imagem: cst-dsm.png
               // 50% do tamanho da imagem:cst-dsm.png => width: 204, height: 70),
-              const SizedBox(height: 95.0),
+              const SizedBox(height: 55.0),
               const Text(
                 'Loading...', // Definir um texto para o Splash.
                 style: TextStyle(
@@ -67,7 +70,9 @@ class _SplashState extends State<Splash> {
                 height: 60.0,
               ), // Definir uma caixa com espaçamento no tamanho de 35dp (aprox. 35px).
               const Text(
-                'Splash Screen', // Definir um texto para o Splash.
+                'Felipe Moretti'
+                '\nKayro César'
+                '\nPaulo Selestrino', // Definir um texto para o Splash.
                 style: TextStyle(
                   // Definir um estilo para o texto Splash.
                   fontSize:
@@ -77,9 +82,7 @@ class _SplashState extends State<Splash> {
                 ),
               ),
               const Text(
-                'Felipe Moretti'
-                'Kayro César'
-                'Paulo Selestrino', // Definir um texto para o Splash.
+                '\nVersão 1.0', // Definir um texto para o Splash.
                 style: TextStyle(
                   // Definir um estilo para o texto Splash.
                   fontSize:
