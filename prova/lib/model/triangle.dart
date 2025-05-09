@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class Triangle {
   double ladoA;
   double ladoB;
@@ -19,7 +21,7 @@ class Triangle {
     if (!ehValido()) return 0;
 
     final s = calcularPerimetro() / 2;
-    return (s * (s - ladoA) * (s - ladoB) * (s - ladoC));
+    return sqrt(s * (s - ladoA) * (s - ladoB) * (s - ladoC));
   }
 
   String determinarTipo() {
